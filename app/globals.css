@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition;
+  }
+
+  .box {
+    @apply p-6 rounded-lg shadow-lg bg-brandGreen text-white transition-colors duration-300;
+  }
+  .box:hover {
+    @apply bg-brandGold text-black;
+  }
+}
+body {
+  @apply text-gray-100 bg-gray-900;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+
+/* 🌟 Floating Sparkle */
+@keyframes sparkleFloat {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(-20px) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.7;
+  }
+} 
+
+@keyframes pulseGlow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.9;
+  }
+}
+.animate-sparkle {
+  animation: sparkleFloat 3s ease-in-out infinite;
+}
+.animate-glow {
+  animation: pulseGlow 5s ease-in-out infinite;
+} 
