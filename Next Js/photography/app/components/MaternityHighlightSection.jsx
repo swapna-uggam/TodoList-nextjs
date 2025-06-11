@@ -6,8 +6,8 @@ export default function MaternityHighlightSection() {
   return (
     <div className="w-full">
       {/* Maternity message ABOVE video */}
-      <div className="w-full mt-[-28px] bg-gradient-to-b text-black text-center py-6 px-4">
-        <h2 className="text-xl sm:text-2xl font-bold text-black-600 mb-2">
+      <div className="w-full mt-[-28px] bg-white text-black text-center py-6 px-4">
+        <h2 className="text-xl sm:text-2xl font-bold text-black mb-2">
           Celebrate Your Journey with Maternity Photography!
         </h2>
         <p className="text-sm sm:text-base text-gray-700 font-medium">

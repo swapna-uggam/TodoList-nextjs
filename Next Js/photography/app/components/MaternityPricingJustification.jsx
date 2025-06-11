@@ -50,7 +50,7 @@ export default function MaternityPricingJustification() {
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-2 2xl:grid-cols-6  lg:grid-cols-3 gap-10 2xl:gap-68 2xl:mr-[500px] place-items-center">
           {items.map(({ icon, title, desc }, i) => (
             <div
               key={i}
@@ -65,7 +65,7 @@ export default function MaternityPricingJustification() {
 
               {/* Content */}
               <div className="mt-10 flex flex-col justify-center flex-grow px-2">
-                <h3 className="text-sm sm:text-base font-semibold text-black-700 mb-1">{title}</h3>
+                <h3 className="text-sm sm:text-base font-semibold text-blue-700 mb-1">{title}</h3>
                 <p className="text-[10px] sm:text-xs lg:text-sm text-gray-600 leading-snug">{desc}</p>
               </div>
             </div>

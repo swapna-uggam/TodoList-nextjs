@@ -57,7 +57,7 @@ export default function PackagesSection() {
           <h2 className="text-3xl font-bold text-gray-900 mb-2 leading-tight">
             Maternity Photography Packages
           </h2>
-          <p className="text-gray-60 text-sm max-w-md mx-auto leading-snug">
+          <p className="text-black text-sm max-w-md mx-auto leading-snug">
             Affordable options to suit every expecting mother's needs and budget
           </p>
         </div>

@@ -1,4 +1,3 @@
-
 'use client';
 
 import Link from 'next/link';
@@ -22,34 +21,41 @@ export default function Navbar() {
   return (
     <>
       <nav className="bg-white shadow fixed top-0 left-0 right-0 z-50 w-full">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16 relative">
-            {/* Logo */}
-            <Link href="/" className="text-xl font-bold text-gray-900 z-10">
-              Maternity Photography
-            </Link>
+        <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 4xl:px-16">
+          <div className="flex items-center justify-between h-16 relative w-full">
 
-            {/* Desktop & Laptop Nav - hidden on small */}
-            <div className="hidden md:flex space-x-8">
+
+            {/* Logo Section - pushes far left in 4xl */}
+            <div className="flex items-center space-x-2 z-10 4xl:mr-auto">
+              <img src="/logo.png" alt="Logo" className="h-14 w-16 4xl:h-20 4xl:w-24" />
+              <Link
+                href="/"
+                className="text-xl font-bold text-gray-900 4xl:text-4xl"
+              >
+                Snap U Photography
+              </Link>
+            </div>
+
+            {/* Desktop Nav - aligns right, grows on 4k */}
+            <div className="hidden md:flex space-x-6 4xl:space-x-10 4xl:text-2xl ml-auto">
               {navLinks.map(({ href, label }) => (
                 <Link
                   key={label}
                   href={href}
-                  className="text-gray-900 hover:text-pink-500 transition duration-300 font-medium"
+                  className="text-black-700 hover:text-pink-500 transition duration-300 font-medium"
                 >
                   {label}
                 </Link>
               ))}
             </div>
 
-            {/* Mobile Hamburger Button - visible on small only */}
-            <div className="md:hidden z-50">
+            {/* Mobile Hamburger Button */}
+            <div className="md:hidden z-50 ">
               <button
                 onClick={toggleMenu}
                 aria-label="Toggle menu"
                 aria-expanded={isOpen}
-                className="text-gray-900 focus:outline-none"
-              >
+                className="text-gray-900 focus:outline-none">
                 <svg
                   className="w-6 h-6"
                   fill="none"
@@ -78,7 +84,7 @@ export default function Navbar() {
         onClick={closeMenu}
       />
 
-      {/* Mobile Menu Drawer */}
+      {/* Mobile Drawer */}
       <aside
         className={`absolute top-16 right-0 bg-white shadow-lg rounded-bl-lg rounded-tl-lg md:hidden z-50 transition-transform duration-300 ${
           isOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0 pointer-events-none'
@@ -101,3 +107,4 @@ export default function Navbar() {
     </>
   );
 }
+

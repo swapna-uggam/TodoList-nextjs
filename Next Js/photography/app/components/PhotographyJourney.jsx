@@ -48,7 +48,7 @@ export default function PhotographyJourney() {
   };
 
   return (
-    <section className="py-6 px-6 bg-pink-50 rounded-xl">
+    <section className="py-6 px-6 bg-blue-50 rounded-xl">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
           Your Photography Journey
@@ -59,7 +59,7 @@ export default function PhotographyJourney() {
 
         <div className="relative">
           {/* Vertical line for steps (desktop only) */}
-          <div className="hidden md:block absolute left-6 top-0 h-full w-1 bg-pink-200 rounded" />
+          <div className="hidden md:block absolute left-6 top-0 h-full w-1 bg-blue-200 rounded" />
 
           <div className="space-y-10">
             {steps.map((step, index) => {
@@ -77,8 +77,8 @@ export default function PhotographyJourney() {
                   <div
                     className={`relative z-10 w-12 h-12 flex items-center justify-center rounded-full ${
                       isFirst
-                        ? `bg-pink-600 text-white shadow-lg ring-2 ring-pink-700 ${blinkClass}`
-                        : 'bg-pink-200 text-pink-700'
+                        ? `bg-blue-700 text-white shadow-lg ring-2 ring-blue-700 ${blinkClass}`
+                        : 'bg-blue-200 text-blue-700'
                     } text-lg font-bold`}
                   >
                     {step.id}

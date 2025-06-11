@@ -5,35 +5,37 @@ import { Heart, Camera, Users, Gift, Cloud, Shield, Truck } from 'lucide-react';
 
 const features = [
   {
-    icon: <Heart className="text-pink-500 w-8 h-8" />,
+    icon: <Heart className="text-blue-500 w-8 h-8" />,
     title: 'Emotional Connection',
     text: 'We don’t just take photos—we capture feelings. Our sessions are designed to highlight the beautiful bond between you and your baby, preserving moments that radiate love, hope, and joy.',
   },
   {
-    icon: <Camera className="text-pink-500 w-8 h-8" />,
+    icon: <Camera className="text-blue-500 w-8 h-8" />,
     title: 'Pro Studio & Outdoor Shoots',
     text: 'Whether you prefer natural sunlight or a cozy studio setting, we provide tailored backdrops and styling that complement your personality, ensuring your comfort and confidence throughout.',
   },
   {
-    icon: <Users className="text-pink-500 w-8 h-8" />,
-    title: 'Expert Female Crew',
-    text: 'Our experienced women-led team understands what expecting mothers need—empathy, privacy, and ease. We guide you gently through poses and create a safe, uplifting space.',
-  },
+  icon: <Users className="text-blue-500 w-8 h-8" />,
+  title: 'Creative Direction & Styling',
+  text: 'Our team brings your vision to life with expert styling, flattering poses, and artistic guidance—making every shot uniquely you. We blend creativity and care to highlight your natural beauty and maternal glow.',
+},
+
   {
-    icon: <Gift className="text-pink-500 w-8 h-8" />,
+    icon: <Gift className="text-blue-500 w-8 h-8" />,
     title: 'All-Inclusive Packages',
     text: 'We make everything hassle-free. From makeup and maternity gowns to props and travel, our transparent packages offer full value—no last-minute surprises or extra costs.',
   },
   {
-    icon: <Cloud className="text-pink-500 w-8 h-8" />,
+    icon: <Cloud className="text-blue-500 w-8 h-8" />,
     title: 'Cloud + Album Delivery',
     text: 'Receive your memories in multiple formats: instantly view and share digital galleries, or relive your session through handcrafted albums designed to last generations.',
   },
   {
-    icon: <Shield className="text-pink-500 w-8 h-8" />,
-    title: 'UK-Trusted Compliance',
-    text: 'We’re GDPR-compliant and privacy-first. Every photo session follows strict safety protocols so you can relax, knowing your moments are both beautiful and secure.',
-  },
+  icon: <Shield className="text-blue-500 w-8 h-8" />,
+  title: 'Safe, Private & Personal',
+  text: 'We honour your story with discretion and care. From the first consultation to final delivery, your images stay secure, your comfort comes first, and your journey is treated with the personal touch it deserves.',
+}
+,
 ];
 
 // Duplicate for seamless animation
@@ -49,7 +51,7 @@ export default function MaternityWhyWeExcel() {
             Why We Excel in Maternity Photography
           </h2>
           <p className="mt-4 text-lg sm:text-xl text-gray-600">
-            💖 Trusted by 1000+ Moms to Capture Their Beautiful Journey 💖
+            💙 Trusted by 1000+ Moms to Capture Their Beautiful Journey 💙
           </p>
         </div>
 

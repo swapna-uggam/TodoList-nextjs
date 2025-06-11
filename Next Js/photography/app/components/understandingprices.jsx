@@ -63,7 +63,7 @@ export default function UnderstandingPrices() {
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-pink-50 via-white to-pink-50 py-12 sm:py-16 px-4 sm:px-6 md:px-12 lg:px-20 font-sans text-gray-900">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-full mx-auto">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-black mb-10 sm:mb-12 tracking-wide drop-shadow-md">
           Understanding Our Pricing
         </h1>
@@ -104,13 +104,13 @@ export default function UnderstandingPrices() {
             >
               {/* Responsive header layout for mobile */}
               <header className="flex flex-col xs:flex-col sm:flex-col md:flex-row items-start md:items-center mb-4 sm:mb-6 gap-2 sm:gap-4">
-                <span className="text-3xl xs:text-4xl sm:text-5xl md:text-5xl">{icon}</span>
-                <h2 className="text-lg xs:text-xl sm:text-2xl md:text-2xl font-semibold text-black border-b-2 sm:border-b-4 border-pink-400 pb-1">
+                <span className="text-xl xs:text-2xl sm:text-3xl md:text-4xl">{icon}</span>
+                <h2 className="text-sm xs:text-xm sm:text-2xl md:text-2xl font-semibold text-black border-b-2 sm:border-b-4 border-pink-400 pb-1">
                   {title}
                 </h2>
               </header>
 
-              <ul className="space-y-3 sm:space-y-4 list-disc list-inside text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed">
+              <ul className="space-y-3 sm:space-y-4 list-disc list-inside text-gray-700 text-xs sm:text-base md:text-base leading-relaxed">
                 {items.map((item, idx) => (
                   <li key={idx}>{item}</li>
                 ))}

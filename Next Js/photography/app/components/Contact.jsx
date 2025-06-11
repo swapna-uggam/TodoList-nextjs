@@ -76,8 +76,7 @@ export default function Contact() {
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Contact Our Maternity Photographers</h1>
           <p className="text-gray-600 text-lg">
-            Fill out the form below to book your maternity photoshoot or ask any questions. 
-            We serve all UK regions including London, West Midlands, South East, and more.
+            Fill out the form below to book your maternity photoshoot or ask any questions. We proudly serve all regions across the UK, including London.
           </p>
         </div>
 
@@ -128,9 +127,7 @@ export default function Contact() {
                     {[
                       { id: 'name', type: 'text', label: 'Your Name', required: true },
                       { id: 'email', type: 'email', label: 'Email Address', required: true },
-                      { id: 'phone', type: 'tel', label: 'Phone Number' },
-                      { id: 'duedate', type: 'date', label: 'Expected Due Date' },
-                    ].map(({ id, type, label, required }) => (
+                      { id: 'phone', type: 'tel', label: 'Phone Number' },{ id: 'duedate', type: 'date', label: 'Expected Photography' },].map(({ id, type, label, required }) => (
                       <div key={id}>
                         <label htmlFor={id} className="block text-sm font-medium text-gray-700 mb-1">
                           {label}
@@ -149,28 +146,20 @@ export default function Contact() {
                     ))}
 
                     <div>
-                      <label htmlFor="location" className="block text-sm font-medium text-gray-700 mb-1">
-                        Preferred Location
-                      </label>
-                      <select
-                        id="location"
-                        name="location"
-                        value={formData.location}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-pink-500 focus:border-pink-500"
-                      >
-                        <option value="">Select your region</option>
-                        <option value="london">London</option>
-                        <option value="west-midlands">West Midlands</option>
-                        <option value="south-east">South East</option>
-                        <option value="east-midlands">East Midlands</option>
-                        <option value="north-west">North West</option>
-                        <option value="yorkshire">Yorkshire</option>
-                        <option value="scotland">Scotland</option>
-                        <option value="northern-ireland">Northern Ireland</option>
-                        <option value="other">Other</option>
-                      </select>
-                    </div>
+  <label htmlFor="location" className="block text-sm font-medium text-gray-700 mb-1">
+    Post Code
+  </label>
+  <input
+    id="location"
+    name="location"
+    type="text"
+    placeholder="e.g. SW1A 1AA"
+    value={formData.location}
+    onChange={handleChange}
+    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-pink-500 focus:border-pink-500"
+  />
+</div>
+
 
                     <div>
                       <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
@@ -303,7 +292,7 @@ export default function Contact() {
         },
         {
           icon: <MapPinIcon className="w-5 h-5 text-pink-500 mr-3 shrink-0" aria-hidden="true" />,
-          value: "123 Photography Studio, London, UK",
+          value: "Snap U Photography, London, UK",
           href: "https://maps.google.com?q=123+Photography+Studio,+London,+UK"
         },
       ].map(({ icon, value, href }, i) => (
